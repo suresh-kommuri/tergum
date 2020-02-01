@@ -34,7 +34,6 @@
       $('#header').removeClass('header-scrolled');
     }
   });
-
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
