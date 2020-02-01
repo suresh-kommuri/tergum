@@ -29,6 +29,17 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  
+   <script>
+        function disableClick(){
+            document.onclick=function(event){
+            if (event.button == 2) {
+                alert('Right Click Message');
+                return false;
+            }
+            }
+        }
+    </script>
 
   <!-- =======================================================
     Theme Name: PANKAJ
@@ -38,7 +49,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="disableClick()" contextmenu="">
   <!--==========================
   Header
   ============================-->
